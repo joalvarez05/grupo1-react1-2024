@@ -1,133 +1,164 @@
-//COMENTARIOS EN JVS
+//? COMENTARIOS
 
-// Comentario de UNA sola linea
-/* Comentarios de VARIAS lineas:
-este es un comentario
-de varias lineas!*/
+//Comentario de una sola linea
+
+/*Comentorio de varias lineas, 
+este es un 
+comentario de
+varias lineas*/
 
 //Comentario verde
-//*Comenatrio verde claro
+//*Comentario verde claro
 //?Comentario azul
 //!Comentario rojo
 
 //*---------------------------------------------------------
 //? COMO EJECUTAR JVS
 
-//a- Directo HTML
+//a- Directo en HTML
 //b- Consola
-//c- Creando el archivo JVS
+//c- Creando archivo JVS
 
 //*---------------------------------------------------------
-//? CONSOLA
+//? IMPRIMIR EN CONSOLA
 
-console.log("Hola!");
+console.log("Hola");
 console.error("Soy un error");
-console.warn("Soy una advertencia!");
+console.warn("Soy una advertencia");
 
-//*---------------------------------------------------------
 //? IMPRIMIR EN PANTALLA O DOCUMENTO
 document.write("Hola");
 
 //*---------------------------------------------------------
 //? SINTAXIS EN JVS
-
-//!VARIEBLES
-
 /*
--TIPOS DE VARIABLES
+. TIPOS DE VARIABLE:
 
 - VAR
 - LET
 - CONST
 
-. NOMBRE: camelCase
+. NOMBRE: Para el nombre de las variables se usa "camelCase"
+
+. VALOR: se le asigna un valor a la variable con =
 */
 
-//*---------------------------------------------------------
-//? LET
+//*-----------------------------
+//? Let
 
 let nombreApellido = "Lucas Ferruchi";
 console.log(nombreApellido);
 
-//! NO SE PUEDE REPETIR
-// let nombreApellido = "juan perez";
-// console.log(nombreApellido);
+//! NO PUEDEN REPETIRSE
+// let nombreApellido =
 
-//! SE PPUEDEN REASIGNAR
-nombreApellido = "juan perez";
+//! SI PUEDEN REASIGNARSE
+nombreApellido = "Juan Carlos";
 console.log(nombreApellido);
 
-//*---------------------------------------------------------
-//? CONST
+//*-----------------------------
+//? Const
 
 const apellido = "Ferruchi";
+console.log(apellido);
 
-//! NO SE PUEDE REPETIR
-// const apellido
+//! NO PUEDEN NI REPETIRSE NI REASIGNARSE
+// const apellido = !ERROR
+// apellido = "gonzales";
+// console.log(apellido);
 
-//! NO SE PUEDEN REASIGNAR
-// apellido = "Perez";
-
-//*---------------------------------------------------------
-//? VAR
+//*-----------------------------
+//? Var
 
 var alumno = "Luci";
-console.log(alumno);
 
+//! ojo: PUEDEN REPETIRSE Y REASIGNARSE
 var alumno = "Carlos";
 console.log(alumno);
 
-alumno = "Jessi";
-console.log(alumno);
-
-//*---------------------------------------------------------
-let numero = 45;
-console.log(numero);
-
-//----------------------------------------------------------
-//----------------------------------------------------------//? VAR
+// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //? OPERADORES
 
-//? ASIGNACION "="
+//? Asignacion "="
 
-//? ARITMETICOS "+ - * / %"
-let numero1 = 65789;
+//? Aritméticos
+let numero1 = 987;
 let numero2 = 34;
 
-console.log(numero1 % numero2);
+console.log(numero1 + numero2); //hacerlo directo en consola tambien
 
-let resultadoSuma = numero1 + numero2;
-console.log(resultadoSuma);
+let resultado = numero1 % numero2;
+console.log(resultado);
 
-let resultadoResta = numero1 - numero2;
-console.log(resultadoResta);
-
-//! ojo!!! con el + (concatenar cadenas de STRING)
+//*------------------------
+//! OJO con el + en string
 
 let nombre = "Lucas";
 let apellido1 = "Ferruchi";
-let edad = 39;
+let edad = 38;
 
 console.log(nombre + " " + apellido1 + " " + edad);
 
-//? COMPARACION "=" "==" "==="
+//PEQUEÑO EJERCICIO
+/*En consola, aparezca el siguiente mensaje:
+Nombre: Lucas Apellio: Ferruchi Edad: 38*/
+
+console.log("Nombre: " + nombre + " Apellido: " + apellido1 + " Edad: " + edad);
+
+//*---------------------------------------------------------
+//? OPERADORES DE RELACION O COMPARACION
+
 let numero3 = 34;
 let numero4 = "34";
+console.log(numero4);
 
-console.log(numero3 === numero4);
+console.log(numero3 == numero4); //diferenciar entre =, == y ===
 
-//? UNITARIOS ++ --
+//*---------------------------------------------------------
+//? OPERADORES UNITARIOS
+// ++ y --. Si los aplico a una cadena de string devuelve NUMBER
 
-++numero3;
-console.log(numero3);
+++numero1;
+console.log(numero1);
 
---numero3;
-console.log(numero3);
+--numero4;
+console.log(numero4);
 
-//? NEGACION "!"
+//*---------------------------------------------------------
+//? OPERADORES LOGICOS
+//&& Y ||
+
+//* ejemplo
+console.log(2 > 3 || 3 > 4);
+
+//*---------------------------------------------------------
+//? OPERADOR DE NEGACION
+// "!". Invierte el valor
+
 let caja = true;
 console.log(!caja);
 
-//? LOGICOS "&&" (Y - AND) "||"(O - OR)
-//* EJEMPLO
-console.log(2 < 3 || 3 > 4);
+// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
+//? ARRAYS O ARREGLOS - APLICAR EL LOG
+
+let cajaNumeros = [12, 65, -65, 67.34];
+
+let ficha = ["Carlos", "Camila", "Luci", "Juan"];
+
+let ficha1 = ["Lucas", "Jorge", "sofia", 540, true];
+console.log(ficha1);
+
+//*---------------------------------------------------------
+//? OBJETOS - APLICAR EL LOG
+
+let persona = {
+  nombre: "Lucas",
+  apellido: "Ferruchi",
+  edad: 38,
+  cursando: true,
+  domicilio: ["Corrientes ", 78, " San Miguel"],
+};
+
+console.log(persona);
