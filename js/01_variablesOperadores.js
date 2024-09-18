@@ -144,8 +144,10 @@ console.log(!caja);
 //? ARRAYS O ARREGLOS - APLICAR EL LOG
 
 let cajaNumeros = [12, 65, -65, 67.34];
+console.log(cajaNumeros);
 
 let ficha = ["Carlos", "Camila", "Luci", "Juan"];
+console.log(ficha);
 
 let ficha1 = ["Lucas", "Jorge", "sofia", 540, true];
 console.log(ficha1);
