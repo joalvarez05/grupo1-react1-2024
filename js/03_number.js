@@ -17,6 +17,8 @@ c- COMPLETAR. siempre entrega STRING, por mas que ingresemos numero
 // let numeroDecimales = parseFloat(numeros);
 // console.log(numeroDecimales);
 
+//!NaN: Not a Number
+
 //*EN UNA SOLA LINEA ---------------------------------------
 /* //!ATENCION!
 Cuando PARSEAMOS (convertimos a NUMBER) los datos del CAMPO, 
@@ -34,15 +36,17 @@ ahora recibimos NaN (Not a Number: no es un numero) */
 //* REDONADEAR ----------------------------------------------
 
 // redondea para abajo .floor()
-let numero1 = 45.9;
-console.log(Math.floor(numero1));
+let numero1 = 45.7;
+// console.log(Math.floor(numero1));
+const numArriba = Math.floor(numero1);
+console.log(numArriba);
 
 // redondea para arriba .ceil()
-let numero2 = 45.1;
+let numero2 = 45.3;
 console.log(Math.ceil(numero2));
 
 // redondea para el num entero mas cercano (probar cambiando el valor) .round()
-let numero3 = 45.7;
+let numero3 = 45.4;
 console.log(Math.round(numero3));
 //* --------------------------------------------------------
 
@@ -58,7 +62,7 @@ console.log(numeroConDecimales);
 console.log(Math.floor(numeroConDecimales));
 
 // dejar decimales - 1, 2 o mas
-console.log(Math.round(numeroConDecimales * 10) / 10);
+console.log(Math.round(numeroConDecimales * 100) / 100);
 
 // .toFixed
 console.log(numeroConDecimales.toFixed(3));
@@ -73,6 +77,7 @@ console.log(numero4);
 console.log(`El numero mayor es: ${Math.max(54, 6, 87, 2, 945)}`);
 
 //* MOSTRAR EL NUMERO MENOR
+
 console.log(`El numero menor es: ${Math.min(54, 6, 87, 2, 945)}`);
 //* --------------------------------------------------------
 
