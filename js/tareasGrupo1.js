@@ -60,7 +60,6 @@ C-CAPITALIZAS LA PALABRA "Mascota"
 
 //? SOLUCION ----------------------------------------------------------------
 
-
 // 1.- Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga “un mensaje”.
 // Dificultad:  🟢
 // 2.- Escribe un programa de una sola línea que escriba en la pantalla un texto que diga «Hello World» (document.write).
@@ -103,7 +102,6 @@ C-CAPITALIZAS LA PALABRA "Mascota"
 // document.write("El " + numeromayor + " es el numero mas grande");
 // //------------------------------------------------------------------------------------------------//
 
-
 // let palabra = "mascota";
 
 // console.log(palabra.toUpperCase());
@@ -117,7 +115,6 @@ C-CAPITALIZAS LA PALABRA "Mascota"
 // let restoPalabra = palabra.substring(1);
 // console.log(restoPalabra);
 // console.log(primeraLetra + restoPalabra);
-
 
 // let palabra = "mascota";
 
@@ -173,7 +170,6 @@ tarea 3:
 
 // console.log(numero1, numero2, numero3);
 
-
 //------------------------------------------------------------------------------------------
 //* Ejercicio fiesta
 //Solo puede entrar personas de 18 años o mas
@@ -186,33 +182,32 @@ tarea 3:
 - en caso que este disponible ese producto: informar el valor del kilo
 - en caso de que el producto NO este disponible: informar al usuario que esta en falta */
 
+let edad = parseInt(prompt("Ingresa tu edad"));
 
-let edad= parseInt(prompt("Ingresa tu edad"));
-
-if(!isNaN(edad)) {
-  if(edad >= 18) {
-    console.log("Puede ingresar")
+if (!isNaN(edad)) {
+  if (edad >= 18) {
+    console.log("Puede ingresar");
   } else {
-    console.log("Debe ingresar con un tutor")
+    console.log("Debe ingresar con un tutor");
   }
 } else {
   console.warn("Debe ingresar un NUMERO");
 }
 
-let producto=  prompt("Ingrese un producto de verdulería").toUpperCase().trim;
-let precio;
-switch(producto) {
+let producto = prompt("Ingrese un producto de verdulería").toUpperCase().trim();
+
+switch (producto) {
   case "BANANA":
-    console.log("El valor del kg de banana es $2500")
+    console.log("El valor del kg de banana es $2500");
     break;
   case "MANZANA":
-    console.log("El valor del kg de manzana es $3500")
-      break;
+    console.log("El valor del kg de manzana es $3500");
+    break;
   case "TOMATE":
-    console.log("El valor del kg de tomate es $4000")
-        break;
+    console.log("El valor del kg de tomate es $4000");
+    break;
 
-    default:
+  default:
     console.log("No nos quedó de eso");
     break;
 }
