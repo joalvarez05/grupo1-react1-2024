@@ -206,6 +206,12 @@ switch (producto) {
   case "TOMATE":
     console.log("El valor del kg de tomate es $4000");
     break;
+  case "CEBOLLA":
+    console.log("El valor del kg de tomate es $2000");
+    break;
+  case "LECHUGA":
+    console.log("El valor del kg de tomate es $1500");
+    break;
 
   default:
     console.log("No nos quedó de eso");
