@@ -107,3 +107,4 @@ Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje
 // }
 // console.log(sumaFinal);
 // console.log(typeof arrayDeNumeros);
+
