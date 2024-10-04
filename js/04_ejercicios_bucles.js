@@ -87,6 +87,7 @@ Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje
 
 /*Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
  */
+
 // solucion
 // let evaluarBooleanos = confirm("¿Deseas iniciar el programa?");
 // let arrayDeNumeros = [];
@@ -107,4 +108,3 @@ Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje
 // }
 // console.log(sumaFinal);
 // console.log(typeof arrayDeNumeros);
-

@@ -127,7 +127,3 @@ console.log(reverseStringUserName);
 4) CONVERTIMOS EL ARRAY, EN UN STRING CON .join("").*/
 
 
-// 17- Realiza un script que muestre la posición de la primera vocal de un texto introducido por teclado.
-// solucion
-
-
