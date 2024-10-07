@@ -79,3 +79,4 @@ console.log(primeraLetra + restoPalabra);
 
 let palabraCapitalizada = palabra.at(0).toUpperCase() + palabra.substring(1);
 console.log(palabraCapitalizada);
+// probando git
