@@ -43,12 +43,15 @@ const calculadora = (operacion, numeroA, numeroB) => {
         console.log(numeroA + numeroB);
         break;
       case "resta":
+      case "-":
         console.log(numeroA - numeroB);
         break;
       case "multiplicacion":
+      case "*":
         console.log(numeroA * numeroB);
         break;
       case "division":
+      case "/":
         console.log(numeroA / numeroB);
         break;
     }
