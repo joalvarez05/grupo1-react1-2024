@@ -216,3 +216,6 @@ switch(producto) {
     console.log("No nos quedó de eso");
     break;
 }
+
+
+
