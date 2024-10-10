@@ -33,28 +33,41 @@ totalApagar (+ - * /)
 SWITCH
 */
 
-const calculadora = (operacion, numeroA, numeroB) => {
-  if (isNaN(numeroA) || isNaN(numeroB)) {
-    console.warn("Ingresa un número valido!");
+// const calculadora = (operacion, numeroA, numeroB) => {
+//   if (isNaN(numeroA) || isNaN(numeroB)) {
+//     console.warn("Ingresa un número valido!");
+//   } else {
+//     switch (operacion) {
+//       case "suma":
+//       case "+":
+//         console.log(numeroA + numeroB);
+//         break;
+//       case "resta":
+//       case "-":
+//         console.log(numeroA - numeroB);
+//         break;
+//       case "multiplicacion":
+//       case "*":
+//         console.log(numeroA * numeroB);
+//         break;
+//       case "division":
+//       case "/":
+//         console.log(numeroA / numeroB);
+//         break;
+//     }
+//   }
+// };
+// calculadora("division", 10, 2);
+
+const titulo = document.getElementById("h1");
+const boton = document.getElementById("button");
+const span = document.getElementById("hMundo");
+
+span.addEventListener("dblclick", () => {
+  let respuesta = confirm("Dices OK o cancelar ?");
+  if (respuesta) {
+    alert("Has clickeado en ACEPTAR");
   } else {
-    switch (operacion) {
-      case "suma":
-      case "+":
-        console.log(numeroA + numeroB);
-        break;
-      case "resta":
-      case "-":
-        console.log(numeroA - numeroB);
-        break;
-      case "multiplicacion":
-      case "*":
-        console.log(numeroA * numeroB);
-        break;
-      case "division":
-      case "/":
-        console.log(numeroA / numeroB);
-        break;
-    }
+    alert("Has clickeado en CANCELAR");
   }
-};
-calculadora("division", 10, 2);
+});
