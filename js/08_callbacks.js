@@ -105,29 +105,34 @@
 //     }
 //     return resultado
 // }
-const numeros = [95, 46, 2, 67, 63, 612, 4, 874];
-let multiplicacion = numeros.map((numero) => numero * 2);
-console.log(multiplicacion);
 
-function multiplicar(numero) {
-  return numero * 3;
-}
+// function sumarDatos(numero) {
+//   let suma = 
+// }
 
-function procesarDatos(numeros, multiplicar) {
-  let resultado = numeros.map((numero) => multiplicar(numero));
-  return resultado;
-}
+// const numeros = [95, 46, 2, 67, 63, 612, 4, 874];
+// let multiplicacion = numeros.map((numero) => numero * 2);
+// console.log(multiplicacion);
 
-console.log(procesarDatos(numeros, multiplicar));
+// function multiplicar(numero) {
+//   return numero * 3;
+// }
 
-function sumar(numero) {
-  return numero + 1;
-}
+// function procesarDatos(numeros, multiplicar) {
+//   let resultado = numeros.map((numero) => multiplicar(numero));
+//   return resultado;
+// }
 
-function procesarDatos(numeros, sumar) {
-  let resultado = numeros.map((numero) => sumar(numero));
-  return resultado;
-}
+// console.log(procesarDatos(numeros, multiplicar));
+
+// function sumar(numero) {
+//   return numero + 1;
+// }
+
+// function procesarDatos(numeros, sumar) {
+//   let resultado = numeros.map((numero) => sumar(numero));
+//   return resultado;
+// }
 
 console.log(procesarDatos(numeros, sumar));
 
@@ -165,4 +170,4 @@ let nombresSegunInicial = nuevosNombres.filter((nombre) => {
   return nombre.startsWith("b");
 });
 
-// Ahora hacer lo mismo que hicimos, pero aplicandole funciones para que despues directamente llamemos a esas funciones y se ejecute la accion, cosa que le pueda cambiar los parametros (le pueda pasar diferentes arrays o lo que sea). 
+// Ahora hacer lo mismo que hicimos, pero aplicandole funciones para que despues directamente llamemos a esas funciones y se ejecute la accion, cosa que le pueda cambiar los parametros (le pueda pasar diferentes arrays o lo que sea).
